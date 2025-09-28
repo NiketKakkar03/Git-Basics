@@ -19,10 +19,7 @@ so you need to create your own branch so you can make changes
 `git checkout -b branchname`
 
 # To make a new branch
-`git branch`
-
-# Files you changes (currently in staged changes)
-`git branch`
+`git checkout -b <new-branch-name>`
 
 # Making commits (adding changes)
 `git commit -m "Explain your commit`
