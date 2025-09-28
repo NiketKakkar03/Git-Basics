@@ -15,19 +15,27 @@ pulling = pulling changes from upstream
 after you clone the repository, you're in the master branch by default. this is the main version, and you won't be able to push anything without a mod's permission
 so you need to create your own branch so you can make changes
 
-To switch between branches
+# To switch between branches
 `git checkout -b branchname`
 
-To make a new branch
+# To make a new branch
 `git branch`
 
-Files you changes (currently in staged changes)
+# Files you changes (currently in staged changes)
 `git branch`
 
-Making commits (adding changes)
+# Making commits (adding changes)
 `git commit -m "Explain your commit`
 (never add changes directly to main/master branch)
 
+# Pushing into the branch/repo
+`git push -u origin branchname` (for first time), afterwars you can you `git push` to push the changes
 
+
+# Updating with Master Branches
+if people make changes and merge on gitlab before you merge yours, you might have to update your local repo
+it's good to keep it up-to-date. Sometimes it's necessary if there are merge conflicts (if someone makes a change that git doesn't know how to automatically merge with yours)
+`git checkout master` (or whatever is the name of the main branch)
+`git pull` (to pull any new changes from the main branch)
 
 
